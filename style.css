@@ -1,0 +1,281 @@
+#body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+.conatiners{
+    width: 85% !important;
+    margin: 0px auto !important;
+    font-family: 'Poppins', sans-serif;
+}
+.top-hed{
+    display: flex;
+    background-color: black;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.h-txt{
+    width: 50%;
+    margin-left: 90px;
+}
+.h-txt h1 {
+    color: white;
+    font-size:60px;
+    margin: 90px 0;
+}
+
+/* .h-txt h1{
+    color: white;
+} */
+.h-txt p{
+    color: white;
+}
+
+
+#btn-1{
+    margin-top: 80px;
+    color: white;
+    background-color: rgb(233, 10, 10);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    
+}
+.fa-arrow-right{
+    padding-left: 10px;
+}
+
+.h-img{
+    width:50% ;
+    height: auto;
+    display: flex;
+    justify-content:center ;
+}
+.h-img img{
+    width:100% ;
+    height: 100%;
+}
+.main-div{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+.option{
+    /* flex-basis: 20%; */
+    display: flex;
+    flex-direction: column;
+    min-width: 220px;
+    height: 220px;
+    margin: 8px;
+    background-color: black;
+    border-radius: 10px;
+}
+.btn2{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 27px;
+    padding: 8px;
+    border-radius: 7px;
+}
+#blog-btn{
+    background-color: rgb(30, 236, 11);
+    border-radius: 5px;
+}
+.middle{
+    flex-basis: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 8px;
+}
+.match{
+    border: 1px solid;
+    border-color: rgba(100, 100, 100, 0.1);
+    border-radius: 8px;
+    
+}
+.match-img img{
+    width: 100%;
+}
+.info{
+    margin: 20px;
+    margin-bottom: 0;
+}
+.info h3{
+    font-size: 0.9em;
+    margin-bottom: 0;
+}
+
+.icns{
+    display: flex;
+}
+.icn{
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+}
+.icn i{
+    padding-right: 10px;
+}
+
+.tv-btn{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.l-btn{
+    font-size: 1.6em;
+    padding: 15px 40px;
+    color: aliceblue;
+    background-color: red;
+    border-radius: 8px;
+}
+footer{
+    background-color:black ;
+    font-family: 'Poppins', sans-serif;
+}
+footer hr{
+    width: 70%;
+    color: rgb(50, 49, 53);
+    background-color:black;
+}
+
+footer h1{
+    margin-top: 60px;
+    padding: 90px 0 60px;
+    text-align: center;
+    color: aliceblue;
+    
+}
+footer div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 35px; 
+}
+footer div p{
+    margin: 35px;
+    color: aliceblue;
+}
+
+/* MOBILE VIEW */
+
+@media screen and (max-width: 576px) {
+    .conatiners{
+        width: 95% !important;
+        margin: 0px auto !important;
+        font-family: 'Poppins', sans-serif;
+    }
+    .top-hed{
+        display: flex;
+        flex-direction: column;
+    }
+    .h-txt{display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0px 20px 0px 0px;
+        padding: 0px 20px 0px 0px;
+        padding-right: 20px;
+    }
+    .h-txt h1 {
+        font-size: 30px;
+        line-height: 40px;
+        margin: 40px 20px 20px 20px;
+        text-align: center;
+    }
+    .h-txt p {
+        margin: 10px 30px;
+        text-align: center;
+        white-space:wrap;
+        width: 300px;
+        height: 50px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    #btn-1{
+        margin: 10px 0px;
+    }
+    .h-img{
+        width:100% ;
+        height: auto;
+        display: flex;
+        justify-content:center ;
+        margin-left: 10px;
+    }
+    .main-div{
+        display: flex;
+        flex-direction: column;
+    }
+    .option{
+        background-color: #fff;
+    }
+    .btn2{
+        padding: 10px;
+    }
+    .middle{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    footer div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* TAB VIEW */
+
+@media screen and (min-width: 577px) and (max-width: 992px){
+    
+    .conatiners{
+        width: 90% !important;
+        margin: 0px auto !important;
+        font-family: 'Poppins', sans-serif;
+    }
+    .h-txt{
+        width: 50%;
+        margin-left: 20px;
+    }
+    .h-txt h1 {
+        line-height: 70px;
+        margin: 30px 0;
+    }
+    #btn-1{
+        margin: 10px 0px;
+    }
+
+    .main-div{
+        display: flex;
+        flex-direction: column;
+    }
+    .option{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        height: auto;
+        width: auto;
+    }
+
+    .btn2{
+        flex-basis: 30%;
+        margin-bottom: 25px;
+        padding: 20px 0px;
+        font-size: 1.2em;
+    }
+    .middle{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .tv-btn{
+        visibility: visible;
+    }
+}
+
+
